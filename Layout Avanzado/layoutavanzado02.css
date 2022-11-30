@@ -1,0 +1,86 @@
+/* CSS HEX */
+:root {
+    --uranian-blue: #a8e0ffff;
+    --sky-blue-crayola: #8ee3f5ff;
+    --middle-blue: #70cad1ff;
+    --y-in-mn-blue: #3e517a;
+    --lilac-luster: #b08ea2ff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Helvetica, serif;
+    background-color: var(--middle-blue);
+}
+
+header{
+    background-color: var(--y-in-mn-blue);
+    font-weight: bold;
+    width: 100%;
+
+    display: flex;
+}
+
+#logo, #navigation{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#logo{
+    background-color: var(--lilac-luster);
+    margin-right: auto;
+}
+
+#navigation{
+    background-color: var(--sky-blue-crayola);
+    margin-left: auto;
+}
+
+.post{
+    background-color: var(--lilac-luster);
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post h2{
+    color: white;
+    flex-basis: 100%;
+}
+
+.post img{
+    flex-basis: 10%;
+    width: 200px;
+}
+
+.post .post-content{
+    flex-basis: 70%;
+    background-color: var(--y-in-mn-blue);
+    color: white;
+    padding: 1rem;
+}
+
+footer{
+    background-color: var(--y-in-mn-blue);
+    color: white;
+    padding: 1rem;
+
+    display: flex;
+}
+
+#footer{
+    background-color: var(--lilac-luster);
+    padding: 1rem;
+    margin-right: auto;
+}
+
+#copyright{
+    background-color: var(--middle-blue);
+    padding: 1rem;
+    margin-left: auto;
+}

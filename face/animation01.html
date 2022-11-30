@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Animation 01</title>
+    <style>
+        svg > ellipse{
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink{
+            50%{
+                ry: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg viewBox="0 0 130 130" version="1.1"
+    xmlns="http://www.w3.org/2000/svg">
+        <circle id="face" cx="60" cy="60" r="50" fill="white" stroke="black"></circle>
+        
+        <circle cx="30" cy="40" r="10" fill="white" stroke="black"></circle>
+        <circle cx="30" cy="40" r="2" fill="black" stroke="black"></circle>
+
+
+        <ellipse id="eye" cx="90" cy="40" rx="10" ry="10" fill="white" stroke="black"></ellipse>
+        <ellipse id="pupil" cx="90" cy="40" rx="2" ry="2" fill="black" stroke="black"></ellipse>
+
+        <path d="M 50 70 Q 60 60 70 70" stroke="black" fill="transparent"></path>
+
+        <path d="M 30 90 Q 60 120 90 90" stroke="black" fill="transparent"></path>
+    </svg>
+</body>
+
+</html>
